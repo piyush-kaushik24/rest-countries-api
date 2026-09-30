@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/piyush-kaushik24/rest-countries-api)
-- Live Site URL: [REST Countries API with color theme switcher](<>)
+- Live Site URL: [REST Countries API with color theme switcher](https://rest-countries-api-e5ao.vercel.app/)
 
 ## My process
 
