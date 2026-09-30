@@ -31,9 +31,11 @@ export const CountriesPage = ({
 
   function handleSearch(search: string) {
     setSearch(search);
+    setCurrentPage(1)
   }
   function handleFilter(region: Region) {
     setFilterCountry(region);
+    setCurrentPage(1)
   }
 
   const ItemsPerPage = 10;

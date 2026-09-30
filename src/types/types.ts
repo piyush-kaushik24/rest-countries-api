@@ -31,4 +31,4 @@ type Flags = {
   png: string;
 };
 
-export type Region = "Africa" | "Americas" | "Asia" | "Europe" | "Oceania";
+export type Region = "All"| "Africa" | "Americas" | "Asia" | "Europe" | "Oceania";

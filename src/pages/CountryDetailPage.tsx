@@ -17,9 +17,17 @@ export const CountryDetailPage = ({
   if (loading) {
     return <Loading />;
   }
+
   const country = countries.find(
     (country) => country.alpha3Code === alpha3Code,
   );
+  if (!country) {
+    return (
+      <p className="text-text block pt-8 text-center text-2xl">
+        Country not found
+      </p>
+    );
+  }
 
   return (
     <main className="text-text mx-auto px-6 md:w-[70%] xl:w-auto">

@@ -5,7 +5,7 @@ type SearchBarProps = {
 };
 export const SearchBar = ({ onSearch, search }: SearchBarProps) => {
   return (
-    <div className="bg-surface text-input shadow-soft mt-4 flex gap-4 rounded-lg px-8 py-4 md:w-2/5">
+    <div className="bg-surface text-text shadow-soft mt-4 flex gap-4 rounded-lg px-8 py-4 md:w-2/5 focus-within:ring-2">
       <SearchIcon aria-hidden="true" />
       <label htmlFor="search" className="sr-only">
         Search for a country{" "}

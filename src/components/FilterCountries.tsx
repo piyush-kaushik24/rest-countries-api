@@ -12,7 +12,7 @@ export const FilterCountries = ({
 }: FilterCountriesProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const regions: Region[] = ["Africa", "Americas", "Asia", "Europe", "Oceania"];
+  const regions: Region[] = [ "All","Africa", "Americas", "Asia", "Europe", "Oceania"];
   return (
     <div className="text-text relative w-50">
       <button
@@ -39,6 +39,7 @@ export const FilterCountries = ({
                 type="button"
                 onClick={() => {
                   onFilter(region);
+                  setIsOpen(false)
                 }}
                 className={`${activeRegion === region ? "bg-blue-500 text-white" : ""} w-full rounded-full px-4 text-start`}
               >
